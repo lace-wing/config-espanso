@@ -1,0 +1,101 @@
+matches:
+  # characters
+  # ASCII Arrows
+  - triggers: [":->", ":arr.r"]
+    replace: "→"
+  - triggers: [":<-", ":arr.l"]
+    replace: "←"
+  - triggers: [":arr.u"]
+    replace: "↑"
+  - triggers: [":arr.d"]
+    replace: "↓"
+  - triggers: [":<>", ":arr.LR"]
+    replace: "↔"
+  - triggers: [":arr.UD"]
+    replace: "↕"
+
+  # maths
+
+  - trigger: ":plus.minus"
+    replace: "±"
+  - trigger: ":minus.plus"
+    replace: "∓"
+  - trigger: ":eq.not"
+    replace: "≠"
+  - trigger: ":eq.about"
+    replace: "≈"
+  - trigger: ":^plus"
+    replace: "⁺"
+  - trigger: ":^minus"
+    replace: "⁻"
+
+  - trigger: ":inf"
+    replace: "∞"
+
+  - trigger: ":planck"
+    replace: "ℎ"
+
+  - trigger: ":angle"
+    replace: "∠"
+  - trigger: ":AE"
+    replace: "ᴭ"
+
+  # Greek letters
+
+  - trigger: ":Delta"
+    replace: "Δ"
+  - trigger: "delta"
+    replace: "ᵟ"
+
+  # Common Currency Symbols
+  - trigger: ':eur'
+    replace: '€'
+  - trigger: ':gbp'
+    replace: '£'
+  - trigger: ':usd'
+    replace: '$'
+  - triggers: [':jpy', ':rmb']
+    replace: '¥'
+  - trigger: ':inr'
+    replace: '₹'
+  - trigger: ':btc'
+    replace: '฿'
+  - trigger: ':eth'
+    replace: 'Ξ'
+
+  # spaces
+  - trigger: ':nbs'
+    replace: ' '
+  - trigger: ':zws'
+    replace: '​'
+  - trigger: ':ems'
+    replace: ' '
+  - trigger: ':em2'
+    replace: ' '
+  - trigger: ':em3'
+    replace: ' '
+  - trigger: ':em4'
+    replace: ' '
+  - triggers: [':em6', ':;']
+    replace: ' '
+  - trigger: ':fgs'
+    replace: ' '
+  - trigger: ':pcs'
+    replace: ' '
+
+  # other common symbols
+
+  - trigger: ":check.mark"
+    replace: "✓"
+  - trigger: ":check.box"
+    replace: "✅"
+
+  - trigger: ":cross.mark"
+    replace: "✗"
+  - trigger: ":cross.box"
+    replace: "❎"
+
+  - triggers: [':(c)', ':copyright:']
+    replace: '©'
+  - trigger: ":^TM"
+    replace: "™"

@@ -1,0 +1,18 @@
+matches:
+
+  # C#
+  - trigger: ":learn.cs"
+    replace: "{{catasset}}"
+    vars:
+      - name: inj1
+        type: echo
+        params:
+          echo: "learn.cs"
+
+  - trigger: ":learn.il"
+    replace: "{{catasset}}"
+    vars:
+      - name: inj1
+        type: echo
+        params:
+          echo: "learn.il"

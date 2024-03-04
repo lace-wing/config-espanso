@@ -1,0 +1,160 @@
+matches:
+ 
+  # tModLoader
+  - trigger: ":tm.name"
+    replace: "tModLoader"
+
+  - trigger: ":tm.path.install"
+    replace: "{{catasset}}"
+    vars:
+      - name: inj1
+        type: echo
+        params:
+          echo: "tm.path.install"
+
+  - trigger: ":tm.path.logs"
+    replace: "{{catasset}}"
+    vars:
+      - name: inj1
+        type: echo
+        params:
+          echo: "tm.path.logs"
+
+  - trigger: ":tm.path.saves"
+    replace: "{{catasset}}"
+    vars:
+      - name: inj1
+        type: echo
+        params:
+          echo: "tm.path.saves"
+
+  - trigger: ":tm.path.enabled"
+    replace: "{{catasset}}"
+    vars:
+      - name: inj1
+        type: echo
+        params:
+          echo: "tm.path.enabled"
+
+  # modding related
+  - trigger: ":tm.l"
+    replace: "tModLoader 的 GitHub 仓库链接：https://github.com/tModLoader/tModLoader"
+
+  - trigger: ":u.tm.l"
+    replace: "https://github.com/tModLoader/tModLoader"
+
+  - trigger: ":tm.em.l"
+    replace: "ExampleMod 的 GitHub 仓库链接：https://github.com/tModLoader/tModLoader/tree/stable/ExampleMod"
+
+  - trigger: ":u.tm.em.l"
+    replace: "https://github.com/tModLoader/tModLoader/tree/stable/ExampleMod"
+
+  - trigger: ":tm.wiki.l"
+    replace: "tModLoader Wiki 的链接：https://github.com/tModLoader/tModLoader/wiki"
+
+  - trigger: ":u.tm.wiki.l"
+    replace: "https://github.com/tModLoader/tModLoader/wiki"
+
+  - trigger: ":tm.fs.l"
+    replace: "fs49，tmod 制作教程的链接：https://fs49.org"
+
+  - trigger: ":u.tm.fs.l"
+    replace: "https://fs49.org"
+
+  - regex: ":tm\\.em\\((?P<searchterm>.+)\\)"
+    replace: "ExampleMod 中“{{searchterm}}”的搜索结果：https://github.com/tModLoader/tModLoader/search?utf8=%E2%9C%93&q={{searchterm}}+path:ExampleMod&type=Code"
+
+  - regex: ":u\\.tm\\.em\\((?P<searchterm>.+)\\)"
+    replace: "https://github.com/tModLoader/tModLoader/search?utf8=%E2%9C%93&q={{searchterm}}+path:ExampleMod&type=Code"
+
+  - regex: ":tm\\.ws\\((?P<searchterm>.+)\\)"
+    replace: "tModLoader Wiki 中“{{searchterm}}”的搜索结果：https://github.com/search?q=repo%3AtModLoader%2FtModLoader+{{searchterm}}&type=Wikis"
+
+  - regex: ":u\\.tm\\.ws\\((?P<searchterm>.+)\\)"
+    replace: "https://github.com/search?q=repo%3AtModLoader%2FtModLoader+{{searchterm}}&type=Wikis"
+
+  - regex: ":tm\\.fs\\((?P<searchterm>.+)\\)"
+    replace: "fs49 中“{{searchterm}}”的搜索结果：https://fs49.org/?s={{searchterm}}"
+
+  - regex: ":u\\.tm\\.fs\\((?P<searchterm>.+)\\)"
+    replace: "https://fs49.org/?s={{searchterm}}"
+
+  - trigger: ":tm.doc.menu"
+    replace: "tModLoader 文档菜单的链接：http://docs.tmodloader.net"
+
+  - trigger: ":u.tm.doc.menu.l"
+    replace: "http://docs.tmodloader.net"
+
+  - trigger: ":tm.doc.stable.l"
+    replace: "tModLoader 稳定版文档的链接：http://docs.tmodloader.net/docs/stable/annotated.html"
+
+  - trigger: ":u.tm.doc.stable.l"
+    replace: "http://docs.tmodloader.net/docs/stable/annotated.html"
+
+  # tml specific things
+
+  - trigger: ":tm.particle.l"
+    replace: "原版所有 ParticleOrchestra 的演示：https://gist.github.com/Rijam/971b5252707860b65b582093580aa49c"
+
+  # troubleshooting
+  - trigger: ":tm.report.what"
+    replace: "{{solve}}"
+    vars:
+      - name: solve
+        type: shell
+        params:
+          cmd: "cat ~/.config/espanso/match/assets/tm.report.what.txt"
+
+  - trigger: ":tm.report.where"
+    replace: "{{solve}}"
+    vars:
+      - name: solve
+        type: shell
+        params:
+          cmd: "cat ~/.config/espanso/match/assets/tm.report.where.txt"
+
+  - trigger: ":tm.nosound"
+    replace: "{{solve}}"
+    vars:
+      - name: solve
+        type: shell
+        params:
+          cmd: "cat ~/.config/espanso/match/assets/tm.nosound.txt"
+
+  # mods related
+  - trigger: ":tm.wiki.l"
+    replace: "泰拉瑞亚模组wiki（gg）主页：https://terrariamods.wiki.gg/wiki/Terraria_Mods_Wiki"
+
+  - trigger: ":tm.eg.l"
+    replace: "流光无际（Everglow）的仓库链接：https://github.com/Solaestas/Everglow"
+
+  - trigger: ":tm.slr.l"
+    replace: "星光之河（Starlight River）的仓库链接：https://github.com/ProjectStarlight/StarlightRiver"
+  - trigger: ":tm.slrzh.l"
+    replace: "星光之河汉化补丁的仓库链接：https://github.com/lyc-Lacewing/StarlightRiverZh"
+
+  - trigger: ":tm.ig.l"
+    replace: "更好的体验的仓库链接：https://gitee.com/MyGoold/improve-game"
+
+  - trigger: ":tm.dl.l"
+    replace: "龙晶（Dragon Lens）的仓库链接：https://github.com/ScalarVector1/DragonLens"
+
+  - trigger: ":tm.ee.l"
+    replace: "无尽征途（Endless Escapade）的仓库链接：https://github.com/EndlessEscapade/EndlessEscapade"
+
+  - trigger: ":tm.mor.l"
+    replace: "救赎（Mod of Redemption）的仓库链接：https://github.com/Hallam9K/RedemptionAlpha"
+  - trigger: ":tm.mor.wiki"
+    replace: "救赎（Mod of Redemption）wiki：https://modofredemption.wiki.gg/wiki/Mod_of_Redemption_Wiki"
+
+  - trigger: ":tm.sots.l"
+    replace: "暗影奥秘（Secrets Of The Shadows）的仓库链接：https://github.com/VortexOfRainbows/SOTS"
+
+  - trigger: ":tm.fargo.m.l"
+    replace: "法狗突变（Fargo's Mutant Mod）的仓库链接：https://github.com/Fargowilta/Fargowiltas"
+  - trigger: ":tm.fargo.s.l"
+    replace: "法狗魂（Fargo's Souls Mod）的仓库链接：https://github.com/Fargowilta/FargowiltasSouls"
+
+  - trigger: ":tm.ccm.l"
+    replace: "共建模组（Community Content Mod）的仓库链接：https://github.com/sucs28mee/CCMod"
+

@@ -1,0 +1,34 @@
+matches:
+  # let me
+  - regex: ":bing\\((?P<term>.+)\\)"
+    replace: "{{term}}？让我帮你搜搜：https://bing.com/search?q={{urlenc}}"
+    vars:
+      - name: urlenc
+        type: shell
+        params:
+          cmd: "perl -MURI::Escape -e 'print uri_escape(\"{{term}}\");'"
+
+  # ALERT lorems require https://github.com/per9000/lorem
+  - regex: ":lorem\\((?P<loremlength>[0-9]+),(?P<loremquote>[0-9]+)\\)"
+    replace: "{{lorem}}"
+    vars:
+      - name: lorem
+        type: shell
+        params:
+          cmd: "lorem -s $ESPANSO_LOREMLENGTH -q $ESPANSO_LOREMQUOTE"
+
+  - regex: ":lorem\\((?P<loremlength>[0-9]+),(?P<loremquote>[^0-9]+)\\)"
+    replace: "{{lorem}}"
+    vars:
+      - name: lorem
+        type: shell
+        params:
+          cmd: "lorem -s $ESPANSO_LOREMLENGTH --$ESPANSO_LOREMQUOTE"
+
+  - trigger: ":lorem.lorem"
+    replace: "{{lorem}}"
+    vars:
+      - name: lorem
+        type: shell
+        params:
+          cmd: "lorem -s 3 --lorem"

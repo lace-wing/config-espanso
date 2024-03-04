@@ -1,0 +1,10 @@
+global_vars:
+  - name: inj1
+    type: echo
+    params:
+      echo: ""
+  - name: catasset
+    type: shell
+    depends_on: ["inj1"]
+    params:
+      cmd: "cat ~/.config/espanso/match/assets/{{inj1}}.txt"
