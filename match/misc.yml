@@ -8,6 +8,11 @@ matches:
         params:
           cmd: "perl -MURI::Escape -e 'print uri_escape(\"{{term}}\");'"
 
+  - trigger: ":stfw"
+    replace: "Search The Friendly Web"
+  - trigger: ":rtfm"
+    replace: "Read The Friendly Manual"
+
   # ALERT lorems require https://github.com/per9000/lorem
   - regex: ":lorem\\((?P<loremlength>[0-9]+),(?P<loremquote>[0-9]+)\\)"
     replace: "{{lorem}}"
