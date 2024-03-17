@@ -76,11 +76,11 @@ matches:
     replace: ' '
   - trigger: ':em4'
     replace: ' '
-  - triggers: [':em6', ':;']
+  - trigger: ':em6'
     replace: ' '
   - trigger: ':ths'
     replace: ' '
-  - trigger: ':has'
+  - triggers: [':has', ':;']
     replace: ' '
   - trigger: ':fgs'
     replace: ' '
