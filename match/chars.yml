@@ -78,6 +78,8 @@ matches:
     replace: ' '
   - trigger: ':em6'
     replace: ' '
+  - trigger: ':ths'
+    replace: ' '
   - triggers: [':has', ':;']
     replace: ' '
   - trigger: ':fgs'
