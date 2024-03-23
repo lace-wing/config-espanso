@@ -1,5 +1,10 @@
 matches:
   # characters
+  
+  # tab, incase shit like make needs it
+  - trigger: ":c.tab"
+    replace: "	"
+
   # ASCII Arrows
   - triggers: [":->", ":arr.r"]
     replace: "→"
