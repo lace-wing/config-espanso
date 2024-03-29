@@ -19,6 +19,12 @@ matches:
   - triggers: [":arr.UD"]
     replace: "↕"
 
+  # dashes
+  - trigger: ":da.em"
+    replace: "—"
+  - trigger: ":da.h"
+    replace: "―"
+
   # maths
 
   - trigger: ":plus.minus"
