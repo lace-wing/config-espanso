@@ -1,0 +1,9 @@
+matches:
+  - trigger: ":ll.m.s"
+    replace: "<!-- LTeX: $|$ -->"
+  - trigger: ":ll.l.s"
+    replace: "% LTeX: "
+  - trigger: ":ll.m.l"
+    replace: "<!-- LTeX: language=$|$ -->"
+  - trigger: ":ll.l.l"
+    replace: "% LTeX: language="
