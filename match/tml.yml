@@ -7,7 +7,7 @@ matches:
   - trigger: ":tm.path.install"
     replace: "{{catasset}}"
     vars:
-      - name: inj1
+      - name: inj-cat
         type: echo
         params:
           echo: "tm.path.install"
@@ -15,7 +15,7 @@ matches:
   - trigger: ":tm.path.logs"
     replace: "{{catasset}}"
     vars:
-      - name: inj1
+      - name: inj-cat
         type: echo
         params:
           echo: "tm.path.logs"
@@ -23,7 +23,7 @@ matches:
   - trigger: ":tm.path.saves"
     replace: "{{catasset}}"
     vars:
-      - name: inj1
+      - name: inj-cat
         type: echo
         params:
           echo: "tm.path.saves"
@@ -31,7 +31,7 @@ matches:
   - trigger: ":tm.path.enabled"
     replace: "{{catasset}}"
     vars:
-      - name: inj1
+      - name: inj-cat
         type: echo
         params:
           echo: "tm.path.enabled"
