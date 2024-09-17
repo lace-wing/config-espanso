@@ -55,7 +55,7 @@ matches:
 
   - trigger: ":Delta"
     replace: "Δ"
-  - trigger: "delta"
+  - trigger: ":delta"
     replace: "ᵟ"
 
   # Common Currency Symbols
