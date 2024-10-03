@@ -7,3 +7,11 @@ matches:
     replace: "<!-- LTeX: language=$|$ -->"
   - trigger: ":ll.l.l"
     replace: "% LTeX: language="
+
+  - trigger: ":re.zh"
+    replace: "[一-鿿]"
+
+  - trigger: ":cl.qot.edzh"
+    replace: "rg \"[一-鿿]\" Localization/*/en-US* ChangeLog-en.md --files-with-matches | split row (char newline) | v ...$in"
+  - trigger: ":rev.nohash.zh"
+    replace: "\\(.*#.*\\)\\@<![一-鿿].*"
