@@ -13,5 +13,5 @@ matches:
 
   - trigger: ":cl.qot.edzh"
     replace: "rg \"[一-鿿]\" Localization/*/en-US* ChangeLog-en.md --files-with-matches | split row (char newline) | v ...$in"
-  - trigger: ":rev.nohash.zh"
+  - trigger: ":rev.no#.zh"
     replace: "\\(.*#.*\\)\\@<![一-鿿].*"
