@@ -1,5 +1,23 @@
 matches:
 
+  # comments
+  - trigger: ':c.cm.hw'
+    replace: |
+      /*
+      * Author: 
+      * Date: {{iso}}
+      * Student Number: 
+      * Email: 
+      * Purpose: 
+      * Input: 
+      * Output: 
+      */
+    vars:
+      - name: iso
+        type: date
+        params:
+          format: "%y-%m-%d"
+
   # HTML and Markdown utils
   - trigger: ':h.c'
     replace: '<!-- $|$ -->'

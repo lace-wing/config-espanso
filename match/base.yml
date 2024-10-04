@@ -1,4 +1,8 @@
 global_vars:
+  - name: assets
+    type: echo
+    params:
+      echo: "~/.config/espanso/match/assets"
   - name: inj-cat
     type: echo
     params:
