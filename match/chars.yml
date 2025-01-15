@@ -40,7 +40,7 @@ matches:
   - trigger: ":^minus"
     replace: "⁻"
 
-  - trigger: ":inf"
+  - trigger: ":inff"
     replace: "∞"
 
   - trigger: ":planck"
